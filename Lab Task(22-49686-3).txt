@@ -1,0 +1,83 @@
+Lab Task-01
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    string input;
+    cout<<"Enter Input: ";
+    cin>>input;
+
+    for(int i=0; i<input.length(); i++)
+    {
+        if(input[i]>=48 && input[i]<=57)
+        {
+            cout<<"Numeric Constant";
+            break;
+        }
+        else
+        {
+            cout<<"Not Numeric";
+            break;
+        }
+    }
+}
+
+
+
+Lab Task-02
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    char input;
+    cout<<"Enter a Character : ";
+    cin>>input;
+
+    if(input == '+'||input == '-'||input == '*'||input == '/'||input == '%'||input == '=')
+    {
+        cout<<"Operator : "<<input<<endl;
+    }
+    else
+    {
+        cout<<"Not an Operator"<<endl;
+    }
+}
+
+
+
+Lab Task-03
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+    string input;
+    cout<<"Enter input : ";
+    getline(cin, input);
+
+    if(input.length()>=2 && input[0] == '/' && input[1] == '/')
+    {
+        cout<<"This a single line comment."<<endl;
+    }
+    else if(
+            input[0] == '/' &&
+            input[1] == '*' &&
+            input[input.length() -2] == '*' &&
+            input[input.length() -1] == '/')
+
+    {
+        cout<<"This a multi line comment."<<endl;
+
+    }
+    else
+    {
+        cout<<"This a not a comment."<<endl;
+    }
+}
+
