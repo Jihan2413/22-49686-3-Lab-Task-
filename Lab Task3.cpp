@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    ifstream file("Lab Task3.txt");
+    ifstream file("program.txt");
     char word[100];
 
     if (!file) {
@@ -31,3 +31,4 @@ int main() {
     file.close();
     return 0;
 }
+
