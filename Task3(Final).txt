@@ -1,0 +1,13 @@
+float + string
++-*/=%<>!
+int
+float
+double
+char
+if
+else
+while
+for
+return
+void
+main
